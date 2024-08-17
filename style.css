@@ -278,4 +278,15 @@ body {
     .footer-right {
         text-align: center;
     }
+
+    .map {
+        margin-bottom: 24px;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 200px;
+        border-radius: 12px;
+        border: none;
+    }
 }
