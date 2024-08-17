@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    display: flex;
+    background: #D9D9D9;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.container {
+    flex: 1;
+    background: #FFFFFF;
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container img {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+
+.title h1 {
+    margin-bottom: 5vh;
+    font-size: 34px;
+    font-family:'Crimson Text', Times, serif;
+}
+
+.title-top {
+    position: relative;
+    top: 80px;
+    margin-bottom: 15vh;
+}
+
+.title-top h1 {
+    font-size: 34px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container p {
+    font-size: 20px;
+    /* font-family: 'Domine', sans-serif; */
+    font-family: 'Crimson Text', sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.grid {
+    flex: 1;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: center;
+}
+.grid2 {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.grid img,
+.grid2 img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto; 
+}
+
+.animeimg img,
+.jpopimg img {
+    border-radius: 8px;
+    width: 80%;
+    height: auto;
+}
+
+.animeimg, .jpopimg {
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.spot-img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.desc-spot {
+    padding: 39px;
+    margin: 25px;
+}
+
+.desc-spot-1 {
+    margin: 20px;
+    padding: 5px;
+}
+
+.spot-img img {
+    border-radius: 8px;
+}
+
+.title-spot {
+    margin: 25px;
+    font-weight: 600;
+    font-family: 'Crimson Text', sans-serif;
+}
+
+.video {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.video iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+.travel {
+    margin-bottom: 12vh;
+}
+
+.imgtravel {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 42px;
+}
+
+.imgtravel img {
+    border: none;
+    border-radius: 12px;
+}
+
+.img-left img,
+.img-right img {
+    width: 50%;
+    height: auto;
+}
+
+.desc-event {
+    padding: 40px;
+}
+
+.penutup {
+    margin-left: 32px;
+    margin-bottom: 42vh;
+}
+
+.penutup h1 {
+    margin-bottom: 5vh;
+}
+
+.footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    .container img {
+        width: 100%; 
+    }
+
+    iframe {
+        max-width: 480px;
+        height: 270px;
+    }
+
+    .grid, .grid2 {
+        grid-template-columns: 1fr;
+        padding: 0; 
+    }
+
+    .animeimg img,
+    .jpopimg img {
+        width: 100%;
+    }
+
+    .spot-img, .desc-spot, .title-spot, .video, .travel, .imgtravel {
+        margin: 0;
+        padding: 10px; 
+    }
+
+    .img-left img,
+    .img-right img {
+        width: 100%;
+    }
+    .desc-event {
+        padding: 20px;
+    }
+
+    .penutup {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        margin: 10px 0;
+        text-align: center; 
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+}
